@@ -1,3 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Input Form</title>
+</head>
+<body>
+    <h2>Enter Your Name</h2>
+    <input type="text" id="username" placeholder="Type your name">
+    <button onclick="showName()">Submit</button>
+    <p id="output"></p>
+
+    <script>
+        function showName() {
+            let name = document.getElementById("username").value;
+            document.getElementById("output").innerText = "Hello, " + name + "!";
+        }
+    </script>
+</body>
+</html>
 <header>
 
 <!--
